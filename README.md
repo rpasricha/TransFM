@@ -1,7 +1,7 @@
 # TransFM
 
 This repository contains an implementation of TransFM, according to the paper
-"Translation-based Factorization Machines for Sequential Recommendation"
+"Translation-based Factorization Machines for Sequential Recommendation".
 
 This repository also includes implementations of vanilla FMs, as well as the proposed
 PRME-FM and HRM-FM models.
