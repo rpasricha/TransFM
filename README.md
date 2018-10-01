@@ -1,11 +1,15 @@
 # TransFM
 
-This repository contains an implementation of TransFM, as described in paper
-"Translation-based Factorization Machines for Sequential Recommendation".
+This repository contains an implementation of TransFM, as described in the paper:
+
+Rajiv Pasricha, Julian McAuley,
+"Translation-based Factorization Machines for Sequential Recommendation",
+RecSys 2018.
 
 This repository also includes implementations of vanilla FMs, as well as the proposed
 PRME-FM and HRM-FM models.
 
+Please cite the paper above if you use or extend our models.
 
 
 ## File formats
