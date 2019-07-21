@@ -61,7 +61,7 @@ class TransFM:
         # Term 2 neg
         prod_term_neg = tf.sparse_tensor_dense_matmul(
                 sparse_neg_feats, var_trans_product)
-        term_2_neg = prod_term_neg * pos_feats_sum
+        term_2_neg = prod_term_neg * neg_feats_sum
 
         # Term 3
         term_3_pos = term_1_pos
@@ -95,7 +95,7 @@ class TransFM:
                 + term_4_pos - term_5_pos - term_6_pos) - 0.5 * diag_term_pos
         neg_preds = neg_linear + 0.5 * (
                 term_1_neg + term_2_neg + term_3_neg
-                + term_4_neg - term_5_neg - term_6_neg) - 0.5 * diag_term_pos
+                + term_4_neg - term_5_neg - term_6_neg) - 0.5 * diag_term_neg
 
         return pos_preds, neg_preds
 
